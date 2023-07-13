@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		56B927BD2A53258800C19EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927BC2A53258800C19EA9 /* AppDelegate.swift */; };
 		56B927BF2A53258800C19EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927BE2A53258800C19EA9 /* SceneDelegate.swift */; };
-		56B927C12A53258800C19EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927C02A53258800C19EA9 /* ViewController.swift */; };
+		56B927C12A53258800C19EA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927C02A53258800C19EA9 /* LoginView.swift */; };
 		56B927C42A53258800C19EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B927C22A53258800C19EA9 /* Main.storyboard */; };
 		56B927C62A53258C00C19EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B927C52A53258C00C19EA9 /* Assets.xcassets */; };
 		56B927C92A53258C00C19EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B927C72A53258C00C19EA9 /* LaunchScreen.storyboard */; };
+		56B927D22A5326F600C19EA9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927D12A5326F600C19EA9 /* LoginViewModel.swift */; };
+		56B927D52A53275600C19EA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927D42A53275600C19EA9 /* APIClient.swift */; };
+		56B927D72A5328D900C19EA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B927D62A5328D900C19EA9 /* User.swift */; };
+		56B927DA2A532CD200C19EA9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 56B927D92A532CD200C19EA9 /* SnapKit */; };
+		56C0013E2A53461400C052E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0013D2A53461400C052E8 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56B927B92A53258800C19EA9 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B927BC2A53258800C19EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B927BE2A53258800C19EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56B927C02A53258800C19EA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56B927C02A53258800C19EA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		56B927C32A53258800C19EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B927C52A53258C00C19EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B927C82A53258C00C19EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56B927CA2A53258C00C19EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B927D12A5326F600C19EA9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		56B927D42A53275600C19EA9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		56B927D62A5328D900C19EA9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56C0013D2A53461400C052E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B927DA2A532CD200C19EA9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,51 @@
 		56B927BB2A53258800C19EA9 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				56C0013C2A5345F200C052E8 /* Home */,
 				56B927BC2A53258800C19EA9 /* AppDelegate.swift */,
 				56B927BE2A53258800C19EA9 /* SceneDelegate.swift */,
-				56B927C02A53258800C19EA9 /* ViewController.swift */,
+				56B927D02A5326C300C19EA9 /* Login */,
 				56B927C22A53258800C19EA9 /* Main.storyboard */,
 				56B927C52A53258C00C19EA9 /* Assets.xcassets */,
 				56B927C72A53258C00C19EA9 /* LaunchScreen.storyboard */,
 				56B927CA2A53258C00C19EA9 /* Info.plist */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		56B927D02A5326C300C19EA9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				56B927D32A53270200C19EA9 /* Model */,
+				56B927C02A53258800C19EA9 /* LoginView.swift */,
+				56B927D12A5326F600C19EA9 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		56B927D32A53270200C19EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56B927D42A53275600C19EA9 /* APIClient.swift */,
+				56B927D62A5328D900C19EA9 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56C0013C2A5345F200C052E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				56C0013F2A53461D00C052E8 /* Model */,
+				56C0013D2A53461400C052E8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		56C0013F2A53461D00C052E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = MVVM;
+			packageProductDependencies = (
+				56B927D92A532CD200C19EA9 /* SnapKit */,
+			);
 			productName = MVVM;
 			productReference = 56B927B92A53258800C19EA9 /* MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 56B927B02A53258800C19EA9;
+			packageReferences = (
+				56B927D82A532CD200C19EA9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 56B927BA2A53258800C19EA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B927C12A53258800C19EA9 /* ViewController.swift in Sources */,
+				56B927D22A5326F600C19EA9 /* LoginViewModel.swift in Sources */,
+				56C0013E2A53461400C052E8 /* HomeView.swift in Sources */,
+				56B927C12A53258800C19EA9 /* LoginView.swift in Sources */,
+				56B927D72A5328D900C19EA9 /* User.swift in Sources */,
 				56B927BD2A53258800C19EA9 /* AppDelegate.swift in Sources */,
+				56B927D52A53275600C19EA9 /* APIClient.swift in Sources */,
 				56B927BF2A53258800C19EA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56B927D82A532CD200C19EA9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56B927D92A532CD200C19EA9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56B927D82A532CD200C19EA9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56B927B12A53258800C19EA9 /* Project object */;
 }
